@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FriendsVC" customModule="CalendarEventApp" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="PnS-q5-jy1" id="1Na-w5-QKg"/>
+                <outlet property="main_frame" destination="DWU-Na-Ep3" id="dj5-Wl-BC6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DWU-Na-Ep3">
+                    <rect key="frame" x="0.0" y="327" width="375" height="340"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Calendar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aod-pb-C5j">
+                            <rect key="frame" x="20" y="0.0" width="355" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="ven-Vq-jid"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="PnS-q5-jy1">
+                            <rect key="frame" x="0.0" y="40" width="375" height="300"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Nn5-tk-cjg">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="aod-pb-C5j" firstAttribute="leading" secondItem="DWU-Na-Ep3" secondAttribute="leading" constant="20" id="0Xg-6H-mho"/>
+                        <constraint firstItem="PnS-q5-jy1" firstAttribute="top" secondItem="aod-pb-C5j" secondAttribute="bottom" id="1gZ-XQ-yx9"/>
+                        <constraint firstItem="PnS-q5-jy1" firstAttribute="leading" secondItem="DWU-Na-Ep3" secondAttribute="leading" id="39U-6x-f1L"/>
+                        <constraint firstAttribute="height" constant="340" id="CWR-ln-Ej4"/>
+                        <constraint firstAttribute="trailing" secondItem="aod-pb-C5j" secondAttribute="trailing" id="R3I-47-5gZ"/>
+                        <constraint firstAttribute="trailing" secondItem="PnS-q5-jy1" secondAttribute="trailing" id="lrr-zb-q2f"/>
+                        <constraint firstAttribute="bottom" secondItem="PnS-q5-jy1" secondAttribute="bottom" id="m7c-kY-BPo"/>
+                        <constraint firstItem="aod-pb-C5j" firstAttribute="top" secondItem="DWU-Na-Ep3" secondAttribute="top" id="tuh-XK-uBi"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="DWU-Na-Ep3" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Brz-AZ-FjH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="DWU-Na-Ep3" secondAttribute="bottom" id="CEV-eu-b5e"/>
+                <constraint firstItem="DWU-Na-Ep3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="LGs-Un-G9v"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

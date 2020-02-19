@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AnswerCell" id="KGk-i7-Jjw" customClass="AnswerCell" customModule="CalendarEventApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="39.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MTo-H1-pCX">
+                        <rect key="frame" x="1" y="10" width="20" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="TIS-rR-Iyi"/>
+                            <constraint firstAttribute="width" constant="20" id="oFB-ne-Ver"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I don't know. I can't even tie my shoes " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6HN-cK-ocq">
+                        <rect key="frame" x="29" y="0.0" width="336" height="39.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="MTo-H1-pCX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="MLG-tz-TeF"/>
+                    <constraint firstItem="6HN-cK-ocq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Ngd-7h-dew"/>
+                    <constraint firstItem="6HN-cK-ocq" firstAttribute="leading" secondItem="MTo-H1-pCX" secondAttribute="trailing" constant="8" id="TSn-gQ-3ud"/>
+                    <constraint firstItem="MTo-H1-pCX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="1" id="Tco-dZ-Jcu"/>
+                    <constraint firstAttribute="bottom" secondItem="6HN-cK-ocq" secondAttribute="bottom" id="YCP-tB-4to"/>
+                    <constraint firstAttribute="trailing" secondItem="6HN-cK-ocq" secondAttribute="trailing" constant="10" id="m7M-6v-yXY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="answer_label" destination="6HN-cK-ocq" id="6pc-4O-JMw"/>
+                <outlet property="circle_view" destination="MTo-H1-pCX" id="Z7f-we-9tV"/>
+            </connections>
+            <point key="canvasLocation" x="118.11594202898551" y="123.88392857142857"/>
+        </tableViewCell>
+    </objects>
+</document>

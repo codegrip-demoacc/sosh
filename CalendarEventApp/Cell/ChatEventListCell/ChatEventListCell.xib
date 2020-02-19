@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatEventListCell" rowHeight="316" id="KGk-i7-Jjw" customClass="ChatEventListCell" customModule="CalendarEventApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="357" height="316"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="357" height="315.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DEw-re-l3t">
+                        <rect key="frame" x="0.0" y="0.0" width="357" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tahoe Ski Trip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4G-gm-mBm">
+                                <rect key="frame" x="20" y="0.0" width="317" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="h4G-gm-mBm" firstAttribute="top" secondItem="DEw-re-l3t" secondAttribute="top" id="G6P-V0-trw"/>
+                            <constraint firstAttribute="trailing" secondItem="h4G-gm-mBm" secondAttribute="trailing" constant="20" id="PT9-EI-3Jh"/>
+                            <constraint firstItem="h4G-gm-mBm" firstAttribute="leading" secondItem="DEw-re-l3t" secondAttribute="leading" constant="20" id="VgG-E4-nBe"/>
+                            <constraint firstAttribute="height" constant="30" id="bzS-mT-bcs"/>
+                            <constraint firstAttribute="bottom" secondItem="h4G-gm-mBm" secondAttribute="bottom" id="g48-7z-ihH"/>
+                        </constraints>
+                    </view>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vHK-ro-gZW">
+                        <rect key="frame" x="0.0" y="30" width="357" height="285.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="285.5" id="MAG-ze-7Uf"/>
+                        </constraints>
+                    </tableView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="DEw-re-l3t" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="A3M-Fz-aTo"/>
+                    <constraint firstItem="vHK-ro-gZW" firstAttribute="top" secondItem="DEw-re-l3t" secondAttribute="bottom" id="auR-4m-gHj"/>
+                    <constraint firstAttribute="trailing" secondItem="vHK-ro-gZW" secondAttribute="trailing" id="eYd-mq-err"/>
+                    <constraint firstAttribute="trailing" secondItem="DEw-re-l3t" secondAttribute="trailing" id="j2b-Od-884"/>
+                    <constraint firstItem="DEw-re-l3t" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="wbS-BJ-sHX"/>
+                    <constraint firstItem="vHK-ro-gZW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="zQk-3l-jIY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="name_label" destination="h4G-gm-mBm" id="K9f-tS-pWb"/>
+                <outlet property="tableView" destination="vHK-ro-gZW" id="cfT-qg-0S4"/>
+                <outlet property="table_height" destination="MAG-ze-7Uf" id="D5v-a4-axF"/>
+            </connections>
+            <point key="canvasLocation" x="121.0144927536232" y="69.642857142857139"/>
+        </tableViewCell>
+    </objects>
+</document>

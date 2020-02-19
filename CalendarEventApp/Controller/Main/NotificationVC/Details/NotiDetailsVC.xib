@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NotiDetailsVC" customModule="CalendarEventApp" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="MBr-R8-NDA" id="sqP-cW-RLY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caw-q5-ANr">
+                    <rect key="frame" x="20" y="54" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="dw6-9x-CPR"/>
+                        <constraint firstAttribute="height" constant="24" id="r6j-YO-zKu"/>
+                    </constraints>
+                    <state key="normal" image="back"/>
+                    <connections>
+                        <action selector="backAction:" destination="-1" eventType="touchUpInside" id="mwx-pt-psp"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MBr-R8-NDA">
+                    <rect key="frame" x="20" y="78" width="374" height="784"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="MBr-R8-NDA" firstAttribute="top" secondItem="caw-q5-ANr" secondAttribute="bottom" id="ICM-ah-s3A"/>
+                <constraint firstItem="caw-q5-ANr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="JF4-9u-GaL"/>
+                <constraint firstItem="MBr-R8-NDA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="RhV-Ub-oOl"/>
+                <constraint firstItem="caw-q5-ANr" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="UTW-Fz-oUB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="MBr-R8-NDA" secondAttribute="bottom" id="VHe-QK-WFv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MBr-R8-NDA" secondAttribute="trailing" constant="20" id="dZ5-Kh-f87"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-125" y="169"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="24" height="24"/>
+    </resources>
+</document>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>144460110287-l97t4gpkc1k427e1schdedt2l0vuru6j.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.144460110287-l97t4gpkc1k427e1schdedt2l0vuru6j</string>
+	<key>API_KEY</key>
+	<string>AIzaSyADe_mRfXSGHkLvNGfAVxLpcl1unyR7tYU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>144460110287</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.app.sosh</string>
+	<key>PROJECT_ID</key>
+	<string>sosh-2aab5</string>
+	<key>STORAGE_BUCKET</key>
+	<string>sosh-2aab5.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:144460110287:ios:60c01e7a2d90b3ff</string>
+	<key>DATABASE_URL</key>
+	<string>https://sosh-2aab5.firebaseio.com</string>
+</dict>
+</plist>
